@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Guide</title>
+
+    <style>
+        /* CSS STYLING */
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(120deg, #0f172a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            font-size: 36px;
+        }
+
+        nav {
+            background: #1e293b;
+            padding: 14px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px 12px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 18px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #1d4ed8;
+            margin-top: 0;
+        }
+
+        .history-item {
+            border-left: 4px solid #2563eb;
+            padding: 5px 0 15px 20px;
+            margin-left: 8px;
+        }
+
+        .history-item strong {
+            color: #2563eb;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #extraInfo {
+            display: none;
+            background: #dcfce7;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Learning Guide</h1>
+        <p>Reasons, Applications, Limitations, Features & History</p>
+    </header>
+
+    <nav>
+        <a href="#reasons">Reasons</a>
+        <a href="#applications">Applications</a>
+        <a href="#limitations">Limitations</a>
+        <a href="#features">Features</a>
+        <a href="#history">History</a>
+    </nav>
+
+    <main>
+
+        <!-- 1. REASONS TO LEARN HTML -->
+        <section id="reasons">
+            <h2>1. Five Reasons to Learn HTML</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>1. Easy to Learn</h3>
+                    <p>HTML uses simple tags and a beginner-friendly structure.</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Create Websites</h3>
+                    <p>HTML provides the basic structure of web pages.</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Career Opportunities</h3>
+                    <p>HTML is an important foundation for web development.</p>
+                </div>
+
+                <div class="card">
+                    <h3>4. Works with CSS and JS</h3>
+                    <p>It combines with CSS and JavaScript to build modern websites.</p>
+                </div>
+
+                <div class="card">
+                    <h3>5. Build Projects</h3>
+                    <p>Create portfolios, blogs, college projects and websites.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. APPLICATIONS -->
+        <section id="applications">
+            <h2>2. Applications of HTML</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Website Development</h3>
+                    <p>Used to create web pages and websites.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Education</h3>
+                    <p>Used in online learning platforms and digital notes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>E-commerce</h3>
+                    <p>Displays products and shopping information.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Forms</h3>
+                    <p>Creates registration, login and feedback forms.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Multimedia</h3>
+                    <p>Displays images, audio and video.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Portfolios</h3>
+                    <p>Showcases personal skills, achievements and projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. LIMITATIONS -->
+        <section id="limitations">
+            <h2>3. Limitations of HTML</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Static Pages</h3>
+                    <p>HTML alone cannot create advanced dynamic behavior.</p>
+                </div>
+
+                <div class="card">
+                    <h3>No Programming Logic</h3>
+                    <p>It does not provide general-purpose loops and conditions.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Limited Styling</h3>
+                    <p>CSS is required for advanced layouts and visual design.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Limited Interactivity</h3>
+                    <p>JavaScript adds advanced interactive behavior.</p>
+                </div>
+
+                <div class="card">
+                    <h3>No Database Management</h3>
+                    <p>Server-side technologies are needed for database operations.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Security</h3>
+                    <p>HTML alone cannot provide secure authentication or server-side protection.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ENHANCEMENTS AND FEATURES -->
+        <section id="features">
+            <h2>4. HTML Enhancements and New Features</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Semantic Tags</h3>
+                    <p>Tags such as header, footer, nav and article give meaning to content.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Audio and Video</h3>
+                    <p>Audio and video elements support multimedia content.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Canvas</h3>
+                    <p>The canvas element allows drawing graphics using JavaScript.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Improved Forms</h3>
+                    <p>Input types include email, date, number and range.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Web Storage</h3>
+                    <p>Browser storage APIs can save data locally.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Responsive Design</h3>
+                    <p>HTML and CSS help websites adapt to mobile and desktop screens.</p>
+                </div>
+            </div>
+
+            <button onclick="showInfo()">Learn More</button>
+
+            <div id="extraInfo">
+                <h3>Three Important Technologies</h3>
+                <p><strong>HTML:</strong> Structures the web page.</p>
+                <p><strong>CSS:</strong> Adds colors, layouts and styles.</p>
+                <p><strong>JavaScript:</strong> Adds interaction and dynamic behavior.</p>
+            </div>
+        </section>
+
+        <!-- 5. HISTORY -->
+        <section id="history">
+            <h2>5. History of HTML</h2>
+
+            <div class="history-item">
+                <strong>1989 – Beginning of the Web</strong>
+                <p>Tim Berners-Lee proposed the World Wide Web at CERN.</p>
+            </div>
+
+            <div class="history-item">
+                <strong>1991 – Early HTML</strong>
+                <p>An early description of HTML was introduced.</p>
+            </div>
+
+            <div class="history-item">
+                <strong>1995 – HTML 2.0</strong>
+                <p>A formal HTML specification was published.</p>
+            </div>
+
+            <div class="history-item">
+                <strong>1997 – HTML 3.2 and HTML 4.0</strong>
+                <p>Support for tables, scripting, styles and forms improved.</p>
+            </div>
+
+            <div class="history-item">
+                <strong>1999 – HTML 4.01</strong>
+                <p>A revised version of HTML 4 was released.</p>
+            </div>
+
+            <div class="history-item">
+                <strong>2014 – HTML5</strong>
+                <p>HTML5 became a W3C Recommendation with modern web features.</p>
+            </div>
+
+            <div class="history-item">
+                <strong>Today – Living Standard</strong>
+                <p>HTML continues to evolve through the WHATWG Living Standard.</p>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE BUTTON -->
+        <section>
+            <h2>Conclusion</h2>
+            <p>
+                HTML is the foundation of web development.
+                It defines the structure of web pages and works
+                with CSS for styling and JavaScript for interactivity.
+            </p>
+
+            <button onclick="showMessage()">
+                Click to Finish
+            </button>
+
+            <p id="message"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>HTML Learning Guide | Designed for Students</p>
+        <p>&copy; 2026 HTML Education Project</p>
+    </footer>
+
+    <script>
+        // JAVASCRIPT FUNCTIONS
+
+        function showInfo() {
+            const info = document.getElementById("extraInfo");
+
+            if (info.style.display === "block") {
+                info.style.display = "none";
+            } else {
+                info.style.display = "block";
+            }
+        }
+
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Congratulations! You have completed the HTML Learning Guide.";
+        }
+    </script>
+
+</body>
+</html>
